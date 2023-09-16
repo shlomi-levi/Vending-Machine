@@ -13,8 +13,6 @@
 
 The Vending Machine Library is a Python library that allows you to simulate the functionality of a vending machine. You can use this library to create, manage, and interact with vending machines in your Python projects.
 
-![Vending Machine Demo](demo.gif)
-
 ## Features
 
 - Create and manage vending machines with customizable products and prices.
@@ -24,6 +22,7 @@ The Vending Machine Library is a Python library that allows you to simulate the 
 - Highly customizable and extensible.
 
 ## Examples
+
 Please refer to the `.tests/` directory for usage examples.
 
 
