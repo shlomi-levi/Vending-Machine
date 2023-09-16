@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "Chips",
+            "quantity": 15,
+            "price": 3
+        },
+        {
+            "name": "Snickers",
+            "quantity": 15,
+            "price": 5
+        }
+    ]
+}
