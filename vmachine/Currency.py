@@ -17,14 +17,24 @@ class Currency:
     def getCurrencies(self):
         return self.__currencyComposition.keys()
 
-    def setCurrencyComposition(self, newCurrency:"Currency"):
-        self.__currencyComposition = newCurrency
+    def getCurrencyInfo(self):
+        string = ""
+
+        keys = list(self.__currencyComposition.keys())
+        keys.sort()
+
+        for i in range(len(keys)):
+            string += f"\t\t{keys[i]}: {self.__currencyComposition[keys[i]]}\n"
+
+        string += f"\n\t\tTotal: {self.__totalCurrency}"
+
+        return string
 
     def getTotalCurrency(self) -> int:
         return self.__totalCurrency
 
     def add(self, money:"Currency") -> None:
-        for key in money.__currencyComposition:
+        for key in money.__currencyComposition.keys():
             self.__currencyComposition[key] += money.__currencyComposition[key]
             self.__totalCurrency += key * money.__currencyComposition[key]
 
@@ -36,6 +46,9 @@ class Currency:
         coins.sort(reverse=True)
 
         changeGiven:Currency = Currency()
+
+        if totalChangeLeft == 0:
+            return True, tempCurrency, changeGiven
 
         for i in range(len(self.__currencyComposition)):
                 while totalChangeLeft > 0 and coins[i] <= totalChangeLeft and tempCurrency.__currencyComposition[coins[i]] > 0:

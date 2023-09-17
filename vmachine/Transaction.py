@@ -1,4 +1,4 @@
-import VendingMachine.VendingMachineExceptions
+import vmachine.VendingMachineExceptions
 
 from .Product import Product
 from .Currency import Currency
@@ -17,10 +17,23 @@ class Transaction:
 
     def cancelTransaction(self):
         if self.__transactionWasCancelled:
-            raise VendingMachine.VendingMachineExceptions.TransactionAlreadyCancelledException(self.__transactionID, self.__transactionCancellationTimestamp)
+            raise vmachine.VendingMachineExceptions.TransactionAlreadyCancelledException(self.__transactionID, self.__transactionCancellationTimestamp)
 
         self.__transactionWasCancelled = True
         self.__transactionCancellationTimestamp = datetime.datetime.now()
 
     def getTransactionInfo(self) -> str:
-        return "(" + str(self.__transcationTimestamp) + ") ID: " + str(self.__transactionID) + " " + self.__transactionProduct.getProductName() + str(self.__transactionProduct.getPrice()) + "$"
+        ret = (f"Purchase ({str(self.__transcationTimestamp)}):"
+               f"\n\tTransaction ID: {str(self.__transactionID)}"
+               f"{' (Cancelled)' if self.__transactionWasCancelled else ''}"
+               f"\n\tProduct: {self.__transactionProduct.getProductName()} (Product ID: {self.__transactionProduct.getProductID()})"
+               f"\n\tPrice: {self.__transactionAmount}\n"
+               f"\n\tMoney given: \n{self.__transactionRecieved.getCurrencyInfo()}\n"
+               f"\n\tChange given:\n{self.__transactionChange.getCurrencyInfo()}\n")
+
+        if self.__transactionWasCancelled:
+            ret += f"\n\tCancellation Timestamp: {str(self.__transactionCancellationTimestamp)}"
+
+        return ret
+
+

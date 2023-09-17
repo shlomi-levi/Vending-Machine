@@ -1,7 +1,13 @@
 from .Currency import Currency
-from .Inventory import Inventory
-from .Product import Product
-from .Transaction import Transaction
-from .TransactionsKeeper import TransactionsKeeper
 from .VendingMachine import VendingMachine
-import VendingMachine.VendingMachineExceptions
+import vmachine.VendingMachineExceptions
+
+
+# I don't need to import these since the end client won't need to use them:
+    # from .Inventory import Inventory
+    # from .Transaction import Transaction
+    # from .TransactionsKeeper import TransactionsKeeper
+    # from .Product import Product
+
+
+

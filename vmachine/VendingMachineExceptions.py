@@ -24,3 +24,8 @@ class TransactionDoesntExistException(Exception):
     def __init__(self, transactionID:int):
         errMsg = f'There is no transaction with the id of {transactionID}.'
         super().__init__(errMsg)
+
+class ProductDoesntExistException(Exception):
+    def __init__(self, productID:int):
+        errMsg = f"There is no product with the id of {productID} in the inventory."
+        super().__init__(errMsg)

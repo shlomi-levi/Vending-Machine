@@ -6,10 +6,13 @@ class Product:
         self.__productID:int = _id
 
     def getDetails(self) -> str:
-        return self.__name + "(" + str(self.__productID) + ") - " + str(self.__price) + "$"
+        return self.__name + "(Product ID:" + str(self.__productID) + ") - " + str(self.__price) + "$"
 
     def getQuantity(self) -> int:
         return self.__quantity
+
+    def setQuantity(self, newQuantity:int) -> None:
+        self.__quantity = newQuantity
 
     def reduceQuantityByOne(self) -> None:
         self.__quantity -= 1

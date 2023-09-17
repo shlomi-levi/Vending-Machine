@@ -1,4 +1,25 @@
-Purchase (2023-09-17 03:14:47.047311):
+Loading 1 product manually (2023-09-17 03:28:31.189793):
+	Product ID: 1
+	Product name: Bamba
+	Product price: 5
+	Product quantity: 3
+
+
+Loading 1 product manually (2023-09-17 03:28:31.189793):
+	Product ID: 2
+	Product name: Bisli
+	Product price: 6
+	Product quantity: 4
+
+
+Loading 1 product manually (2023-09-17 03:28:31.189793):
+	Product ID: 3
+	Product name: Coca Cola
+	Product price: 5
+	Product quantity: 4
+
+
+Purchase (2023-09-17 03:28:31.189793):
 	Transaction ID: 1
 	Product: Bamba (Product ID: 1)
 	Price: 5
@@ -19,7 +40,7 @@ Purchase (2023-09-17 03:14:47.047311):
 
 		Total: 10
 
-Purchase (2023-09-17 03:14:47.047311):
+Purchase (2023-09-17 03:28:31.190793):
 	Transaction ID: 2
 	Product: Bisli (Product ID: 2)
 	Price: 6
