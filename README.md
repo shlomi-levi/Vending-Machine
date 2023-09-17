@@ -45,7 +45,7 @@ test.py:
 ```python
   import vmachine
 
-  vm:vmachine = vmachine.VendingMachine(50, 50, 50, 50)
+  vm:vmachine = vmachine.VendingMachine(ONE_SHEKELS=50, TWO_SHEKELS=50, FIVE_SHEKELS=50, TEN_SHEKELS=50)
   vm.setupLogsFile('./logs.txt')
   vm.loadProductsFromJson('products.json')
   
