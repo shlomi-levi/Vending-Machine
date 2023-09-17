@@ -1,0 +1,42 @@
+Purchase (2023-09-17 03:14:47.047311):
+	Transaction ID: 1
+	Product: Bamba (Product ID: 1)
+	Price: 5
+
+	Money given: 
+		1: 0
+		2: 0
+		5: 1
+		10: 1
+
+		Total: 15
+
+	Change given:
+		1: 0
+		2: 0
+		5: 0
+		10: 1
+
+		Total: 10
+
+Purchase (2023-09-17 03:14:47.047311):
+	Transaction ID: 2
+	Product: Bisli (Product ID: 2)
+	Price: 6
+
+	Money given: 
+		1: 0
+		2: 0
+		5: 0
+		10: 1
+
+		Total: 10
+
+	Change given:
+		1: 0
+		2: 2
+		5: 0
+		10: 0
+
+		Total: 4
+

@@ -1,42 +1,112 @@
-(2023-09-17 01:35:07.052299)
+Loading 2 Products (2023-09-17 03:01:37.425371):
+	Product ID: 1
+	Product name: Chips
+	Product price: 3
+	Product quantity: 15
+
+	Product ID: 2
+	Product name: Snickers
+	Product price: 5
+	Product quantity: 15
+
+2 Products loaded successfully.
+
+
+Purchase (2023-09-17 03:01:37.425371):
 	Transaction ID: 1
-	Product: Snickers (Product ID: 2)
-	Price: 5
-
-	Money given: 
-		1: 0
-		2: 0
-		5: 1
-		10: 0
-
-		Total: 5
-
-	Change given:
-		1: 0
-		2: 0
-		5: 0
-		10: 0
-
-		Total: 0
-
-(2023-09-17 01:35:07.052299)
-	Transaction ID: 2
-	Product: chips (Product ID: 1)
+	Product: Chips (Product ID: 1)
 	Price: 3
 
 	Money given: 
 		1: 0
 		2: 0
 		5: 1
-		10: 0
+		10: 1
 
-		Total: 5
+		Total: 15
 
 	Change given:
 		1: 0
 		2: 1
 		5: 0
+		10: 1
+
+		Total: 12
+
+Purchase (2023-09-17 03:01:37.426371):
+	Transaction ID: 2
+	Product: Snickers (Product ID: 2)
+	Price: 5
+
+	Money given: 
+		1: 0
+		2: 1
+		5: 0
+		10: 1
+
+		Total: 12
+
+	Change given:
+		1: 0
+		2: 1
+		5: 1
 		10: 0
 
-		Total: 2
+		Total: 7
+
+Loading 2 Products (2023-09-17 03:03:14.280768):
+	Product ID: 1
+	Product name: Chips
+	Product price: 3
+	Product quantity: 15
+
+	Product ID: 2
+	Product name: Snickers
+	Product price: 5
+	Product quantity: 15
+
+2 Products loaded successfully.
+
+
+Purchase (2023-09-17 03:03:14.281768):
+	Transaction ID: 1
+	Product: Chips (Product ID: 1)
+	Price: 3
+
+	Money given: 
+		1: 0
+		2: 0
+		5: 1
+		10: 1
+
+		Total: 15
+
+	Change given:
+		1: 0
+		2: 1
+		5: 0
+		10: 1
+
+		Total: 12
+
+Purchase (2023-09-17 03:03:14.281768):
+	Transaction ID: 2
+	Product: Snickers (Product ID: 2)
+	Price: 5
+
+	Money given: 
+		1: 0
+		2: 1
+		5: 0
+		10: 1
+
+		Total: 12
+
+	Change given:
+		1: 0
+		2: 1
+		5: 1
+		10: 0
+
+		Total: 7
 

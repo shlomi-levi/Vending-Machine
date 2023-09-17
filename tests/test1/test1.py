@@ -1,20 +1,17 @@
 import vmachine
 
-def main():
-    vm:vmachine = vmachine.VendingMachine(50, 50, 50, 50)
-    vm.setupLogsFile('./logs.txt')
+vm:vmachine = vmachine.VendingMachine(50, 50, 50, 50)
+vm.setupLogsFile('./logs.txt')
+vm.loadProductsFromJson('products.json')
 
-    vm.loadProductsFromJson('products.json')
+# This would show that chips has an id of 1 and snickers has an id of 2.
+vm.viewAvailableProducts()
 
-    vm.viewAvailableProducts()
+chips = 1
+snickers = 2
 
-    # chipsID = vm.addProduct("chips", 3, 15)
-    # snickersID = vm.addProduct("Snickers", 5, 10)
-    # c:vmachine.Currency = vmachine.Currency(0, 0, 1, 0)
-    # vm.purchase(c, snickersID)
-    # vm.purchase(c, chipsID)
-
-if __name__ == '__main__':
-    main()
+c:vmachine.Currency = vmachine.Currency(FIVE_SHEKELS=1, TEN_SHEKELS=1)
+c = vm.purchase(c, chips)
+c = vm.purchase(c, snickers)
 
 
